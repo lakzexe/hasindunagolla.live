@@ -3,7 +3,6 @@
   
 </h2>
 
-![screencapture-localhost-4322-2024-12-27-11_08_13](https://github.com/user-attachments/assets/19bd6e4a-ddce-4be5-92f1-7e0dd9b3e609)
 
 ## 🚀 Project Structure
 
@@ -11,8 +10,20 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 Directory structure:
-└── hasindulakshan-PersonalPortfolio/
+└── hasindulakshan-hasindu-nagolla.me/
+    ├── .astro/
+    │   ├── data-store.json
+    │   ├── content-modules.mjs
+    │   ├── content.d.ts
+    │   ├── types.d.ts
+    │   ├── settings.json
+    │   └── content-assets.mjs
+    ├── CNAME
+    ├── .github/
+    │   └── workflows/
+    │       └── deploy.yml
     ├── public/
+    │   ├── CNAME
     │   └── logos/
     ├── package.json
     ├── tailwind.config.mjs
@@ -61,6 +72,7 @@ Directory structure:
         │   └── index.astro
         └── utils/
             └── cn.ts
+
 
 ```
 

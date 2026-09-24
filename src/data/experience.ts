@@ -23,7 +23,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     dates: "April 2024 — Present",
     title: "Creator",
     company: "Open Source (Remote)",
-    companyUrl: "https://github.com/hasindulakshan/Python",
+    companyUrl: "https://github.com/hasindu-nagolla/Python",
     description:
       "I created and manage a GitHub repository focusing on fundamental Python concepts and Data Structures and algorithms. It provides resources for learners to build a strong base in Python, starting from the beginner level.",
     technologies: [
