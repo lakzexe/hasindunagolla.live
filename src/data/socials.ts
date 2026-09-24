@@ -3,7 +3,6 @@ import IconLinkedin from "../components/icons/linkedin.astro";
 import IconTwitter from "../components/icons/twitter.astro";
 import IconFacebook from "../components/icons/facebook.astro";
 import IconMedium from "../components/icons/medium.astro";
-import IconPatreon from "../components/icons/patreon.astro";
 
 export const SOCIALS = [
   {
@@ -28,12 +27,7 @@ export const SOCIALS = [
   },
   {
     name: "Medium",
-    url: "https://medium.com/@hasindunagolla",
+    url: "https://medium.com/@hasindu-nagolla",
     icon: IconMedium,
   },
-  // {
-  //   name: "Patreon",
-  //   url: "https://patreon.com/hasindunagolla",
-  //   icon: IconPatreon,
-  // },
 ];
