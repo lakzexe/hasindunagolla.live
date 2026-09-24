@@ -1,13 +1,15 @@
 import IconGithub from "../components/icons/github.astro";
 import IconLinkedin from "../components/icons/linkedin.astro";
 import IconTwitter from "../components/icons/twitter.astro";
-
+import IconFacebook from "../components/icons/facebook.astro";
+import IconMedium from "../components/icons/medium.astro";
+import IconPatreon from "../components/icons/patreon.astro";
 
 export const SOCIALS = [
   {
-    name: "Github",
-    url: "https://github.com/hasindu-nagolla",
-    icon: IconGithub,
+    name: "Facebook",
+    url: "https://www.facebook.com/hasindu.me",
+    icon: IconFacebook,
   },
   {
     name: "Linkedin",
@@ -19,5 +21,19 @@ export const SOCIALS = [
     url: "https://x.com/hasindunagolla",
     icon: IconTwitter,
   },
-  
+  {
+    name: "Github",
+    url: "https://github.com/hasindu-nagolla",
+    icon: IconGithub,
+  },
+  {
+    name: "Medium",
+    url: "https://medium.com/@hasindunagolla",
+    icon: IconMedium,
+  },
+  // {
+  //   name: "Patreon",
+  //   url: "https://patreon.com/hasindunagolla",
+  //   icon: IconPatreon,
+  // },
 ];

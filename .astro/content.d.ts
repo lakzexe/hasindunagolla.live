@@ -93,8 +93,8 @@ declare module 'astro:content' {
 		id: E,
 	): E extends keyof DataEntryMap[C]
 		? string extends keyof DataEntryMap[C]
-			? Promise<DataEntryMap[C][E]> | undefined
-			: Promise<DataEntryMap[C][E]>
+		? Promise<DataEntryMap[C][E]> | undefined
+		: Promise<DataEntryMap[C][E]>
 		: Promise<CollectionEntry<C> | undefined>;
 
 	/** Resolve an array of entry references from the same collection */
@@ -120,14 +120,14 @@ declare module 'astro:content' {
 	): import('astro/zod').ZodEffects<
 		import('astro/zod').ZodString,
 		C extends keyof ContentEntryMap
-			? {
-					collection: C;
-					slug: ValidContentEntrySlug<C>;
-				}
-			: {
-					collection: C;
-					id: keyof DataEntryMap[C];
-				}
+		? {
+			collection: C;
+			slug: ValidContentEntrySlug<C>;
+		}
+		: {
+			collection: C;
+			id: keyof DataEntryMap[C];
+		}
 	>;
 	// Allow generic `string` to avoid excessive type errors in the config
 	// if `dev` is not running to update as you edit.
@@ -142,11 +142,11 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		
+
 	};
 
 	type DataEntryMap = {
-		
+
 	};
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;

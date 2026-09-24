@@ -17,11 +17,10 @@ const { dates, title, company, companyUrl, description, technologies, logo } =
     <header
       class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-neutral-500 sm:col-span-2"
       aria-label={dates}
-      style="font-family: 'Arial', sans-serif;"
     >
       <span>{dates}</span>
     </header>
-    <div class="z-10 sm:col-span-6" style="font-family: 'Arial', sans-serif;">
+    <div class="z-10 sm:col-span-6">
       <h3 class="font-medium leading-snug text-neutral-200">
         <div>
           <a
@@ -30,15 +29,11 @@ const { dates, title, company, companyUrl, description, technologies, logo } =
             target="_blank"
             rel="noreferrer"
             aria-label={title}
-            style="font-family: 'Arial', sans-serif;"
           >
             <span
               class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
-              style="font-family: 'Arial', sans-serif;"></span>
-            <div
-              class="flex gap-x-2 items-center"
-              style="font-family: 'Arial', sans-serif;"
-            >
+            ></span>
+            <div class="flex gap-x-2 items-center">
               {
                 logo && (
                   <img
@@ -48,12 +43,9 @@ const { dates, title, company, companyUrl, description, technologies, logo } =
                   />
                 )
               }
-              <span style="font-family: 'Arial', sans-serif;"
+              <span
                 >{title} ·
-                <span
-                  class="inline-block"
-                  style="font-family: 'Arial', sans-serif;"
-                >
+                <span class="inline-block">
                   {company}
                   <IconArrow />
                 </span>
@@ -62,19 +54,12 @@ const { dates, title, company, companyUrl, description, technologies, logo } =
           </a>
         </div>
       </h3>
-      <p
-        class="mt-2 text-sm leading-normal text-justify"
-        style="font-family: 'Arial', sans-serif;"
-      >
+      <p class="mt-2 text-sm leading-normal text-justify">
         {description}
       </p>
       {
         technologies.length && (
-          <ul
-            class="mt-2 flex flex-wrap"
-            aria-label="Technologies used"
-            style="font-family: 'Arial', sans-serif;"
-          >
+          <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
             {technologies.map((technology) => (
               <li class="mr-1.5 mt-2">
                 <div class="flex items-center backdrop-blur-sm rounded-full border border-neutral-700 border-opacity-50 shadow bg-neutral-400/10 px-3 py-1 text-xs font-medium leading-5 text-neutral-300">
