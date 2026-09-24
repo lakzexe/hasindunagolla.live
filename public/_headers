@@ -1,0 +1,18 @@
+# Cache static assets with version parameters
+/*.png?v=*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Don't cache unversioned images
+/*.png
+  Cache-Control: public, max-age=300, must-revalidate
+
+# Cache other static assets
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.pdf
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML files should always be fresh
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
