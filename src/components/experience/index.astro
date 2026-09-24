@@ -2,24 +2,44 @@
 import type { Props } from "./props";
 import IconArrow from "../icons/arrow.astro";
 
-const { dates, title, company, companyUrl, description, technologies, logo } =
-  Astro.props;
+const {
+  dates,
+  title,
+  company,
+  companyUrl,
+  description,
+  technologies,
+  logo,
+  variant = "default",
+} = Astro.props;
 ---
 
 <li>
   <div
-    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 hover:backdrop-blur-sm duration-500"
+    class={`group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 
+      lg:hover:!opacity-100 lg:group-hover/list:opacity-50 hover:backdrop-blur-sm duration-500`}
   >
+    <!-- Background Hover Effect -->
     <div
-      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-neutral-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+      class={`absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none 
+        lg:-inset-x-6 lg:block
+        ${
+          variant === "community"
+            ? "lg:group-hover:bg-indigo-600/30 lg:group-hover:shadow-lg"
+            : "lg:group-hover:bg-neutral-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+        }`}
     >
     </div>
+
+    <!-- Date Label -->
     <header
       class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-neutral-500 sm:col-span-2"
       aria-label={dates}
     >
       <span>{dates}</span>
     </header>
+
+    <!-- Main Content -->
     <div class="z-10 sm:col-span-6">
       <h3 class="font-medium leading-snug text-neutral-200">
         <div>
@@ -37,14 +57,14 @@ const { dates, title, company, companyUrl, description, technologies, logo } =
               {
                 logo && (
                   <img
-                    class="w-8 h-8 rounded bg-neutral-400/10 "
+                    class="w-8 h-8 rounded bg-neutral-400/10"
                     src={logo}
                     alt={`${company} logo`}
                   />
                 )
               }
-              <span
-                >{title} ·
+              <span>
+                {title} ·
                 <span class="inline-block">
                   {company}
                   <IconArrow />
@@ -54,15 +74,33 @@ const { dates, title, company, companyUrl, description, technologies, logo } =
           </a>
         </div>
       </h3>
-      <p class="mt-2 text-sm leading-normal text-justify">
-        {description}
-      </p>
+
+      <!-- 🟣 Variant Label for Community -->
       {
-        technologies.length && (
+        variant === "community" && (
+          <div class="mt-1 mb-2 inline-block text-xs font-bold text-indigo-300 bg-indigo-950/30 px-2 py-1 rounded-md backdrop-blur-sm shadow-sm tracking-wide">
+            Community Project 🚀
+          </div>
+        )
+      }
+
+      <!-- Description -->
+      <p class="mt-2 text-sm leading-normal text-justify">{description}</p>
+
+      <!-- Technologies List -->
+      {
+        technologies.length > 0 && (
           <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
             {technologies.map((technology) => (
               <li class="mr-1.5 mt-2">
-                <div class="flex items-center backdrop-blur-sm rounded-full border border-neutral-700 border-opacity-50 shadow bg-neutral-400/10 px-3 py-1 text-xs font-medium leading-5 text-neutral-300">
+                <div
+                  class={`flex items-center rounded-full border shadow px-3 py-1 text-xs font-medium leading-5 backdrop-blur-sm
+                  ${
+                    variant === "community"
+                      ? "bg-indigo-500/10 border-indigo-400/50 text-indigo-200"
+                      : "bg-neutral-400/10 border-neutral-700/50 text-neutral-300"
+                  }`}
+                >
                   {technology}
                 </div>
               </li>

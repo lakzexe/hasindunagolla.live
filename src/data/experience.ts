@@ -2,6 +2,18 @@ import type { Props as ExperienceProp } from "../components/experience/props";
 
 export const EXPERIENCE: ExperienceProp[] = [
   {
+    dates: "December 2024 — Present",
+    title: "Owner & Community Builder",
+    company: "The InfinityCS - Telegram Channel",
+    companyUrl: "https://t.me/TheInfinityCS",
+    description:
+      "A community-driven Telegram channel dedicated to sharing Computer Science and software engineering resources including roadmaps, books, cheat sheets, and project ideas for learners at all levels.",
+    technologies: ["Telegram", "Community", "Open Access", "CS Resources"],
+    logo: "/logos/infinitycs.png", // 🖼️ Add this logo to public/logos/
+    variant: "community",
+  },
+
+  {
     dates: "August 2024 — Present",
     title: "Developer & Founder",
     company: "MindBou",
@@ -26,13 +38,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     companyUrl: "https://github.com/hasindu-nagolla/Python",
     description:
       "A GitHub repository focusing on fundamental Python concepts and Data Structures and algorithms. It provides resources for learners to build a strong base in Python, starting from the beginner level.",
-    technologies: [
-      "Python",
-      "Pandas",
-      "NumPy",
-      "Git",
-      "Github",
-    ],
+    technologies: ["Python", "Pandas", "NumPy", "Git", "Github"],
     logo: "/logos/python.png",
   },
   {
@@ -42,13 +48,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     companyUrl: "https://github.com/hasindu-nagolla/Data-Structures-Algorithms",
     description:
       "A GitHub repository dedicated to Data Structures and Algorithms (DSA) in Python. It covers fundamental DSA concepts, including arrays, linked lists, trees, graphs, sorting, and searching algorithms, with well-documented code and examples for learners.",
-    technologies: [
-      "Python",
-      "Pandas",
-      "NumPy",
-      "Git",
-      "Github",
-    ],
+    technologies: ["Python", "Pandas", "NumPy", "Git", "Github"],
     logo: "/logos/python DSA.png",
   },
   {
@@ -72,5 +72,5 @@ export const EXPERIENCE: ExperienceProp[] = [
       "Illustrator",
     ],
     logo: "/logos/medimate.png",
-  }
+  },
 ];
