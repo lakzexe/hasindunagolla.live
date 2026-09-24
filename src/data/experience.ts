@@ -5,7 +5,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     dates: "December 2024 — Present",
     title: "Owner & Community Builder",
     company: "The InfinityCS - Telegram Channel",
-    companyUrl: "https://t.me/TheInfinityCS",
+    companyUrl: "https://t.me/TheInfinity_CS",
     description:
       "A community-driven Telegram channel dedicated to sharing Computer Science and software engineering resources including roadmaps, books, cheat sheets, and project ideas for learners at all levels.",
     technologies: ["Telegram", "Community", "Open Access", "CS Resources"],
