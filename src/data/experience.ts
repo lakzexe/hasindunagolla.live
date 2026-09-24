@@ -7,7 +7,7 @@ export const EXPERIENCE: ExperienceProp[] = [
     company: "MindConnex",
     companyUrl: "",
     description:
-      "An article-sharing platform currently under development, designed to connect readers and writers through engaging content on various topics.",
+      "An article-sharing platform currently under development that is designed to connect readers and writers through engaging content on various topics.",
     technologies: [
       "React JS",
       "Node JS",

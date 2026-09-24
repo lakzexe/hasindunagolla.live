@@ -1,15 +1,16 @@
 ---
 export const frontmatter = {
   title: "My Portfolio | Hasindu Nagolla",
-  description: "Explore the professional portfolio of Hasindu Nagolla, a passionate Software Engineer exploring in AI, ML, and full-stack development.",
-  layout: "../layouts/Layout.astro"
+  description:
+    "Explore the professional portfolio of Hasindu Nagolla, a passionate Software Engineer exploring in AI, ML, and full-stack development.",
+  layout: "../layouts/Layout.astro",
 };
 
-import Component from "../components/Component.astro"
-import Experience from "../components/experience/index.astro"
-import { EXPERIENCE } from "../data/experience"
-import { SOCIALS } from "../data/socials"
-import Layout from "../layouts/Layout.astro"
+import Component from "../components/Component.astro";
+import Experience from "../components/experience/index.astro";
+import { EXPERIENCE } from "../data/experience";
+import { SOCIALS } from "../data/socials";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <!-- Meta Tags -->
@@ -113,9 +114,8 @@ import Layout from "../layouts/Layout.astro"
             <img
               src="/hasindu nagolla.png"
               alt="Professional portrait of Hasindu Nagolla"
-              width="64"
-              height="64"
-              loading="lazy"
+              width="90"
+              height="90"
               decoding="async"
             />
 
@@ -123,26 +123,41 @@ import Layout from "../layouts/Layout.astro"
               <a
                 href="/"
                 class="text-4xl lg:text-5xl block font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50 leading-none"
+                style="font-family: 'Arial', sans-serif;"
               >
                 <h1 class="leading-normal">Hasindu Nagolla</h1>
               </a>
 
               <!-- Bachelor's Degree -->
               <div class="mt-2">
-                <h2 class="text-sm lg:text-sm font-medium text-neutral-400">
+                <h2
+                  class="text-sm lg:text-sm font-medium text-neutral-400"
+                  style="font-family: 'Arial', sans-serif;"
+                >
                   Bachelor of Software Engineering (Hons) | UG
                 </h2>
-                <h3 class="text-xs lg:text-xs font-medium text-neutral-400">
+                <h3
+                  class="text-xs lg:text-xs font-medium text-neutral-400"
+                  style="font-family: 'Arial', sans-serif;"
+                >
                   The Open University of Sri Lanka
                 </h3>
               </div>
 
+              <!-- font-weight: 500; opacity: 0.9; font-family: sans-serif; line-height: 1.6; -->
+
               <!-- NVQ Engineering Draughtsmanship -->
               <div class="mt-1">
-                <h2 class="text-xs lg:text-sm font-medium text-neutral-400">
+                <h2
+                  class="text-xs lg:text-sm font-medium text-neutral-400"
+                  style="font-family: 'Arial', sans-serif;"
+                >
                   Engineering Draughtsmanship | NVQ Level 04
                 </h2>
-                <h3 class="text-xs lg:text-xs font-medium text-neutral-400">
+                <h3
+                  class="text-xs lg:text-xs font-medium text-neutral-400"
+                  style="font-family: 'Arial', sans-serif;"
+                >
                   Dept. of Technical Education & Training
                 </h3>
               </div>
@@ -202,22 +217,26 @@ import Layout from "../layouts/Layout.astro"
               </h2>
             </div>
             <div>
-              <div class="mb-4 space-y-4">
-                <p>
-                  As an undergraduate pursuing a Bachelor of Software
-                  Engineering with Honors at The Open University of Sri Lanka, I
-                  am exploring Artificial Intelligence, Machine Learning and
-                  Data Science. I am actively developing projects focused on
-                  full-stack development and integrating AI features,
-                  particularly within the MERN stack. My technical interests
-                  include exploring AI-driven databases and mastering concepts
-                  in data-driven technologies. Currently, I am working on
-                  MindConnex, an article-sharing platform.
+              <div class="mb-4 space-y-4" style="text-align: justify;">
+                <p
+                  style="font-weight: 500; opacity: 0.9; font-family: 'Arial', sans-serif; 'Arial'; line-height: 1.6;"
+                >
+                  I'm an Aspiring Research Software Engineer and I'm exploring
+                  concepts about Databases, Data-Driven Technologies, Artificial
+                  Intelligence, and Machine Learning. I'm actively developing
+                  projects focused on full-stack development and integrating AI
+                  features, especially using the MERN stack and Python.
+                  Currently, I am working on my innovative project "MindConnex",
+                  an article-sharing platform and I aspire to contribute to
+                  cutting-edge projects that shape the future of technology,
+                  with a strong academic foundation.
                 </p>
 
-                <p>
-                  Looking forward to new opportunities and exciting
-                  collaborations!
+                <p
+                  style="font-weight: 500; opacity: 0.9; font-family: 'Arial', sans-serif; line-height: 1.6;"
+                >
+                  I’m looking forward to new opportunities and exciting
+                  collaborations ahead!
                 </p>
               </div>
             </div>
@@ -240,7 +259,7 @@ import Layout from "../layouts/Layout.astro"
                 {EXPERIENCE.map((experience) => <Experience {...experience} />)}
               </ol>
 
-              <div class="mt-12">
+              <div class="mt-12" style="font-family: 'Arial', sans-serif;">
                 <a
                   data-ccursor
                   class="inline-flex items-center leading-tight text-neutral-200 font-semibold group p-2 rounded px-3"
@@ -278,20 +297,13 @@ import Layout from "../layouts/Layout.astro"
               </div>
             </div>
           </section>
-          <footer class="max-w-md pb-16 text-sm text-neutral-500 sm:pb-0">
+          <footer
+            class="max-w-md pb-16 text-sm text-neutral-500 sm:pb-0"
+            style="font-family: 'Arial', sans-serif;"
+          >
             <p>
-              Designed in
-              <a
-                class="font-medium text-neutral-400 hover:text-red-300 focus-visible:text-red-300 hover:underline"
-                target="_blank"
-                rel="noreferrer">Figma</a
-              >
-              and coded in
-              <a
-                class="font-medium text-neutral-400 hover:text-red-300 focus-visible:text-red-300 hover:underline"
-                target="_blank"
-                rel="noreferrer">Visual Studio Code</a
-              >
+              Focused on delivering impactful results through technology and
+              collaboration.
             </p>
           </footer>
         </main>
@@ -299,7 +311,10 @@ import Layout from "../layouts/Layout.astro"
     </div>
   </div>
 
-  <footer class="text-center py-4 text-xs opacity-70">
+  <footer
+    class="text-center py-4 text-xs opacity-70"
+    style="font-family: 'Arial', sans-serif;"
+  >
     <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
   </footer>
 </Layout>
