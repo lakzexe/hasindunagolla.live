@@ -21,7 +21,7 @@ export default function Footer() {
               <RxLinkedinLogo className="w-4 h-4 text-gray-400" aria-hidden="true" />
             </a>
             <a
-              href="https://github.com/hasindu-nagolla"
+              href="https://github.com/lakzexe"
               target="_blank"
               rel="noreferrer"
               className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
