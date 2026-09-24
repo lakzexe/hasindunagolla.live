@@ -1,13 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
   push:
     branches: [ main ]
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
-# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
@@ -17,8 +14,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Setup PNPM
         uses: pnpm/action-setup@v2
@@ -30,6 +26,16 @@ jobs:
         with:
           node-version: 18
           cache: 'pnpm'
+
+      - name: Cache build
+        uses: actions/cache@v3
+        with:
+          path: |
+            dist
+            .astro
+          key: ${{ runner.os }}-astro-build-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-astro-build-
 
       - name: Install dependencies
         run: pnpm install

@@ -7,7 +7,8 @@ const styles = `
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .c-cursor {
   position: fixed;
@@ -28,9 +29,10 @@ body {
 `;
 
 const setStyles = () => {
-  var styleSheet = document.createElement("style");
-  styleSheet.type = "text/css";
-  styleSheet.innerText = styles;
+  const styleSheet = document.createElement("style");
+  // Modern approach without using deprecated 'type' attribute
+  styleSheet.textContent = styles;
+  styleSheet.setAttribute('data-cursor-styles', ''); // Optional: add a data attribute for identification
   document.head.appendChild(styleSheet);
 };
 

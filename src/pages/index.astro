@@ -1,13 +1,101 @@
 ---
-title: "My Portfolio"
-description: "Welcome to my personal website."
-layout: "../layouts/Layout.astro"
-import Component from "../components/Component.astro";
-import Experience from "../components/experience/index.astro";
-import { EXPERIENCE } from "../data/experience";
-import { SOCIALS } from "../data/socials";
-import Layout from "../layouts/Layout.astro";
+export const frontmatter = {
+  title: "My Portfolio | Hasindu Nagolla",
+  description: "Explore the professional portfolio of Hasindu Nagolla, a passionate Software Engineer exploring in AI, ML, and full-stack development.",
+  layout: "../layouts/Layout.astro"
+};
+
+import Component from "../components/Component.astro"
+import Experience from "../components/experience/index.astro"
+import { EXPERIENCE } from "../data/experience"
+import { SOCIALS } from "../data/socials"
+import Layout from "../layouts/Layout.astro"
 ---
+
+<!-- Meta Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="keywords"
+  content="Hasindu Nagolla, Software Engineer, Machine Learning, Full Stack Developer, MERN Stack, Sri Lanka"
+/>
+<meta name="author" content="Hasindu Nagolla" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph Meta Tags -->
+<meta
+  property="og:title"
+  content="Hasindu Nagolla | Software Engineering & AI Researcher"
+/>
+<meta
+  property="og:description"
+  content="Professional portfolio of Hasindu Nagolla, a Software Engineering student exploring in AI, ML, and full-stack development."
+/>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://hasindu-nagolla.me" />
+<meta
+  property="og:image"
+  content="https://hasindu-nagolla.me/hasindu-nagolla.png"
+/>
+<meta
+  property="og:site_name"
+  content="Hasindu Nagolla - Software Engineer Portfolio"
+/>
+
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@yourTwitterHandle" />
+<meta
+  name="twitter:title"
+  content="Hasindu Nagolla | Software Engineering & AI Researcher"
+/>
+<meta
+  name="twitter:description"
+  content="Professional portfolio of Hasindu Nagolla, a Software Engineering student exploring in AI, ML, and full-stack development."
+/>
+<meta
+  name="twitter:image"
+  content="https://hasindu-nagolla.me/hasindu-nagolla.png"
+/>
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://hasindu-nagolla.me" />
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hasindu Nagolla",
+    "jobTitle": ["Software Engineer", "Researcher", "Student"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "The Open University of Sri Lanka"
+    },
+    "description": "a Software Engineering student exploring in AI, ML, and full-stack development.",
+    "url": "https://hasindu-nagolla.me",
+    "image": "https://hasindu-nagolla.me/hasindu-nagolla.png",
+    "sameAs": [
+      "https://linkedin.com/in/hasindu-nagolla",
+      "https://github.com/hasindu-nagolla"
+    ],
+    "skills": [
+      "Python",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "MERN Stack",
+      "Full Stack Development"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Sri Lanka"
+    },
+    "education": {
+      "@type": "EducationalOrganization",
+      "name": "The Open University of Sri Lanka",
+      "degree": "Bachelor of Software Engineering (Hons)"
+    }
+  }
+</script>
 
 <Layout title="Hasindu Nagolla">
   <div class="relative hero z-10">
@@ -16,6 +104,7 @@ import Layout from "../layouts/Layout.astro";
     >
       <div class="lg:flex lg:justify-between lg:gap-4">
         <header
+          aria-label="Hasindu Nagolla's Portfolio"
           class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24"
         >
           <div
@@ -23,8 +112,11 @@ import Layout from "../layouts/Layout.astro";
           >
             <img
               src="/hasindu nagolla.png"
-              alt="Hasindu Nagolla"
-              class="w-16 h-16 rounded-full"
+              alt="Professional portrait of Hasindu Nagolla"
+              width="64"
+              height="64"
+              loading="lazy"
+              decoding="async"
             />
 
             <div>
