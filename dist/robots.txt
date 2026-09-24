@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://hasindu-nagolla.me/sitemap-index.xml
