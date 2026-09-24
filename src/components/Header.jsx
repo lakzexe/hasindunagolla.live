@@ -6,7 +6,7 @@ export default function Header() {
         { name: 'medium', icon: './assets/medium.png', link: '' },
     ];
     return (
-        <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <div className="w-11/12 max-w-3xl text-center mx-auto min-h-screen pt-28 sm:pt-32 flex flex-col items-center justify-center gap-4">
             <img src="./assets/profile-img.png" alt="" className="rounded-full w-32" />
             <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
                 Hi! I'm Hasindu Nagolla

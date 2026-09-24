@@ -1,13 +1,12 @@
 export default function About() {
     const tools = [
-        { name: 'mongodb', icon: './assets/mongodb.png', },
-        { name: 'figma', icon: './assets/figma.png', },
-        { name: 'vscode', icon: './assets/vscode.png', },
         { name: 'git', icon: './assets/git.png', },
         { name: 'github', icon: './assets/github.png', },
         { name: 'postman', icon: './assets/postman.png', },
         { name: 'linux', icon: './assets/linux.png', },
         { name: 'tensorflow', icon: './assets/tensorflow.png', },
+        { name: 'figma', icon: './assets/figma.png', },
+        { name: 'mongodb', icon: './assets/mongodb.png', },
     ];
 
     const data = [

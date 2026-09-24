@@ -9,7 +9,7 @@ import LenisScroll from './components/LenisScroll'
 
 export default function App() {
     return (
-        <>
+        <div id="top">
             <LenisScroll />
             <Navbar />
             <Header />
@@ -17,6 +17,6 @@ export default function App() {
             <Work />
             <Contact />
             <Footer />
-        </>
+        </div>
     )
 }
