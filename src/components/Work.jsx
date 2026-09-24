@@ -1,121 +1,149 @@
-export default function Work() {
-    // I define the list of projects for the portfolio.
-    const work = [
-        {
-            name: 'MindBou',
-            icon: './assets/mindbou.png',
-            description: 'Web Application',
-            link: 'https://github.com/hasindu-nagolla/MindBou',
-        },
-        {
-            name: 'MediMate',
-            icon: './assets/medimate.png',
-            description: 'Web Application',
-            link: 'https://github.com/MediMateBooking/MediMateProject',
-        },
-        {
-            name: 'HasiiMusic',
-            icon: './assets/hasii-music.png',
-            description: 'Telegram Bot',
-            link: 'https://github.com/hasindu-nagolla/HasiiMusicBot',
-        },
-        {
-            name: 'Scam Detector',
-            icon: './assets/scam-detection.png',
-            description: 'AI/ML',
-            link: '',
-        },
-        {
-            name: 'U/I Redesign ',
-            icon: './assets/boc.png',
-            description: 'UI/UX',
-            link: 'https://www.figma.com/design/LyTYW8jfoL38Oxo5XIhLMH/Untitled?node-id=0-1&m=dev&t=YM1W1QGOwIWuKl2O-1',
-        },
-        {
-            name: 'StampsDiary',
-            icon: './assets/stamp-diary.png',
-            description: 'Web Design',
-            link: 'https://github.com/hasindu-nagolla/simple-web-site',
-        },
-        {
-            name: 'Python Library Management System',
-            icon: './assets/liabrary-management.png',
-            description: 'CLI Application',
-            link: 'https://github.com/hasindu-nagolla/Python-Library-Management-System',
-        },
-        {
-            name: 'Python Repository',
-            icon: './assets/python-image.png',
-            description: 'GitHub Repository',
-            link: 'https://github.com/hasindu-nagolla/Python',
-        }
-    ];
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-    return (
-        // I render the portfolio section.
-        <section id="work" className="w-full py-24 md:py-32 px-6 bg-white dark:bg-[#0F172A]">
-            <div className="max-w-6xl mx-auto">
-                
-                {/* I display the section header. */}
-                <div className="text-center mb-16 animate-on-scroll is-visible">
-                    <p className="text-sm font-semibold text-brand-dark dark:text-white uppercase tracking-widest mb-3">Portfolio</p>
-                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-brand-dark dark:text-white mb-6">Projects</h2>
-                    <p className="max-w-2xl mx-auto text-lg text-gray-500 dark:text-gray-400">
-                        Explore a collection of projects showcasing my skills in front-end and back-end development, from web apps to AI solutions.
-                    </p>
-                </div>
+export default function Work({ hideHeading = false }) {
+ const work = [
+ {
+ name: 'Telegram Bot & Web Player',
+ icon: (
+ <svg className="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zM9 14h6m-3-9v2M7.5 7.5A4.5 4.5 0 003 12v3a4.5 4.5 0 004.5 4.5h9A4.5 4.5 0 0021 15v-3a4.5 4.5 0 00-4.5-4.5h-9z" />
+ </svg>
+ ),
+ category: 'AI / NLP',
+ description: 'Telegram music bot with advanced playback, queues, and web control panel.',
+ tech: ['Python', 'aiogram', 'SQLite'],
+ link: 'https://hasiimusic.hasindunagolla.live/',
+ },
+ {
+ name: 'AI Scam Detector',
+ icon: (
+ <svg className="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+ </svg>
+ ),
+ category: 'AI / ML',
+ description: 'Real-time scam detection for Sinhala text using deep learning models.',
+ tech: ['Python', 'TensorFlow', 'scikit-learn'],
+ link: 'https://colab.research.google.com/drive/1PLgNbyi27WEp5FnYbZefAOKSA-ncl-zT?usp=sharing',
+ },
+ {
+ name: 'AI Scam Detector',
+ icon: (
+ <svg className="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+ </svg>
+ ),
+ category: 'AI / ML',
+ description: 'Real-time scam detection for Sinhala text using deep learning models.',
+ tech: ['Python', 'TensorFlow', 'scikit-learn'],
+ link: 'https://colab.research.google.com/drive/1PLgNbyi27WEp5FnYbZefAOKSA-ncl-zT?usp=sharing',
+ },
+ {
+ name: 'UI Redesign',
+ icon: (
+ <svg className="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+ </svg>
+ ),
+ category: 'UI/UX Design',
+ description: 'Modern and user-friendly interface redesign concepts.',
+ tech: ['Figma', 'Tailwind CSS'],
+ link: 'https://www.figma.com/design/LyTYW8jfoL38Oxo5XIhLMH/Untitled?node-id=0-1&m=dev&t=YM1W1QGOwIWuKl2O-1',
+ },
+ 
+ {
+ name: 'Python Library Management System',
+ icon: (
+ <svg className="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+ </svg>
+ ),
+ category: 'CLI Application',
+ description: 'Command-line based library management system with file persistence.',
+ tech: ['Python', 'JSON', 'Rich'],
+ link: 'https://github.com/hasindu-nagolla/Python-Library-Management-System',
+ },
+ {
+ name: 'Python Repository',
+ icon: (
+ <svg className="w-8 h-8 text-brand-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+ </svg>
+ ),
+ category: 'GitHub Repository',
+ description: 'Collection of Python projects and practice solutions.',
+ tech: ['Python', 'Jupyter', 'Pandas'],
+ link: 'https://github.com/hasindu-nagolla/Python',
+ }
+ ];
 
-                {/* I iterate through each project and render a card. */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-                    {work.map((project, index) => (
-                        <a
-                            key={project.name}
-                            href={project.link || '#'}
-                            target={project.link ? '_blank' : undefined}
-                            rel={project.link ? 'noreferrer' : undefined}
-                            onClick={(event) => {
-                                if (!project.link) {
-                                    event.preventDefault();
-                                }
-                            }}
-                            className="group flex flex-col bg-white dark:bg-[#0F172A] border border-gray-100 dark:border-white/10 rounded-2xl overflow-hidden hover:shadow-lg hover:border-gray-200 dark:hover:border-white/30 hover:-translate-y-1 transition-all duration-300 animate-on-scroll is-visible"
-                            style={{ animationDelay: `${(index % 4) * 0.1}s` }}
-                        >
-                            <div className="w-full aspect-[4/3] bg-brand-surface dark:bg-[#0F172A] overflow-hidden relative">
-                                <div className="absolute inset-0 bg-gray-200/50 mix-blend-multiply group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-                                <img src={project.icon} alt={project.name} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" />
-                            </div>
-                            
-                            <div className="p-6 flex flex-col flex-1 justify-between gap-4">
-                                <div>
-                                    <p className="text-gray-500 dark:text-gray-400 font-semibold text-xs uppercase tracking-wider mb-1">{project.description}</p>
-                                    <h3 className="text-brand-dark dark:text-white text-lg font-bold leading-tight">{project.name}</h3>
-                                </div>
-                                
-                                {project.link && (
-                                    <div className="flex items-center gap-2 text-sm font-medium text-gray-500 dark:text-gray-400 group-hover:text-brand-primary transition-colors">
-                                        View Project
-                                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                        </svg>
-                                    </div>
-                                )}
-                            </div>
-                        </a>
-                    ))}
-                </div>
+ return (
+ <section id="work" className={`${hideHeading ? '' : 'py-20 px-6 bg-white'}`}>
+ <div className="max-w-7xl mx-auto z-10 relative">
 
-                {/* I provide a link to view more projects on GitHub. */}
-                <div className="flex justify-center animate-on-scroll is-visible" style={{ animationDelay: '0.4s' }}>
-                    <a href="https://github.com/hasindu-nagolla" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 px-8 py-4 bg-brand-surface dark:bg-white/5 border border-gray-200 dark:border-white/10 text-brand-dark dark:text-white font-medium rounded-full hover:bg-gray-50 dark:hover:bg-white/10 transition-colors">
-                        View more on GitHub
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </a>
-                </div>
+ {!hideHeading && (
+ <div className="flex flex-col mb-12 animate-on-scroll is-visible">
+ <p className="text-brand-primary font-bold text-sm tracking-wider uppercase mb-2">Portfolio</p>
+ <h2 className="text-3xl md:text-4xl font-bold text-brand-dark">Featured Projects</h2>
+ </div>
+ )}
 
-            </div>
-        </section>
-    );
+ <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+ {work.map((project, index) => (
+ <a
+ key={project.name}
+ href={project.link || '#'}
+ target={project.link ? '_blank' : undefined}
+ rel={project.link ? 'noreferrer' : undefined}
+ onClick={(event) => {
+ if (!project.link) event.preventDefault();
+ }}
+ className="group flex flex-col sm:flex-row items-start sm:items-center p-6 bg-white border border-gray-100 rounded-[1.5rem] hover:shadow-xl hover:border-gray-200 transition-all duration-300 animate-on-scroll is-visible"
+ style={{ animationDelay: `${(index % 2) * 0.1}s` }}
+ >
+ <div className="w-24 h-24 bg-gray-50 flex items-center justify-center rounded-[1.25rem] shrink-0 mb-6 sm:mb-0">
+ {project.icon}
+ </div>
+
+ <div className="sm:ml-8 flex-1 pr-4">
+ <h3 className="text-brand-dark text-lg font-extrabold leading-tight mb-1.5">{project.name}</h3>
+ <p className="text-brand-primary font-bold text-[11px] uppercase tracking-wider mb-2.5">{project.category}</p>
+ <p className="text-sm text-gray-500 leading-relaxed mb-4">{project.description}</p>
+
+ <div className="flex items-center gap-5 flex-wrap">
+ {project.tech.map((t) => (
+ <div key={t} className="flex items-center gap-1.5 text-xs font-semibold text-gray-600">
+ <svg className="w-3.5 h-3.5 opacity-50" fill="currentColor" viewBox="0 0 24 24">
+ <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
+ </svg>
+ {t}
+ </div>
+ ))}
+ </div>
+ </div>
+
+ <div className="hidden sm:flex w-12 h-12 rounded-full border border-gray-100 items-center justify-center text-brand-dark group-hover:border-brand-primary group-hover:text-brand-primary group-hover:bg-brand-primary/5 transition-all shrink-0">
+ <svg className="w-5 h-5 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+ </svg>
+ </div>
+ </a>
+ ))}
+ </div>
+
+ {!hideHeading && (
+ <div className="flex justify-center animate-on-scroll is-visible mt-10">
+ <Link to="/projects" className="inline-flex items-center gap-2 text-blue-600 font-bold text-sm hover:text-blue-700 transition-colors">
+ View all projects
+ <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+ <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+ </svg>
+ </Link>
+ </div>
+ )}
+
+ </div>
+ </section>
+ );
 }
