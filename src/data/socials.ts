@@ -3,6 +3,7 @@ import IconLinkedin from "../components/icons/linkedin.astro";
 import IconTwitter from "../components/icons/twitter.astro";
 import IconFacebook from "../components/icons/facebook.astro";
 import IconMedium from "../components/icons/medium.astro";
+import IconBlueSky from "../components/icons/bluesky.astro";
 
 export const SOCIALS = [
   {
@@ -29,5 +30,10 @@ export const SOCIALS = [
     name: "Medium",
     url: "https://medium.com/@hasindu-nagolla",
     icon: IconMedium,
+  },
+  {
+    name: "Bluesky", // 👈 NEW
+    url: "https://bsky.app/profile/hasindunagolla.bsky.social",
+    icon: IconBlueSky,
   },
 ];
