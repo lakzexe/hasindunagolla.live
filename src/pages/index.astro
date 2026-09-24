@@ -11,6 +11,7 @@ import Experience from "../components/experience/index.astro";
 import { EXPERIENCE } from "../data/experience";
 import { SOCIALS } from "../data/socials";
 import Layout from "../layouts/Layout.astro";
+import { FaWhatsapp, FaTelegram  } from "react-icons/fa";
 ---
 
 <!-- Meta Tags -->
@@ -294,8 +295,31 @@ import Layout from "../layouts/Layout.astro";
   </div>
 
   <footer class="text-center py-4 text-xs opacity-70">
-    <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
+    <p class="mb-2">&copy; {new Date().getFullYear()} All rights reserved.</p>
+  
+    <div class="flex justify-center items-center gap-4">
+      <a
+        href="https://wa.me/94712345678"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-1 text-green-500 hover:underline"
+      >
+        <FaWhatsapp className="text-base" />
+        WhatsApp
+      </a>
+  
+      <!-- <a
+        href="https://t.me/YourTelegramUsername"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-1 text-blue-500 hover:underline"
+      >
+        <FaTelegram className="text-base" />
+        Telegram
+      </a> -->
+    </div>
   </footer>
+
 </Layout>
 
 <style scoped>
