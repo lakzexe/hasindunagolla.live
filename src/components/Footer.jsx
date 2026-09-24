@@ -1,21 +1,33 @@
 export default function Footer() {
     return (
-        <div className="mt-20">
-            <div className="text-center">
-                <div className="w-max flex items-center gap-2 mx-auto">
-                    <img src="./assets/mail_icon.png" alt="" className="w-5 dark:hidden" />
-                    <img src="./assets/mail_icon_dark.png" alt="" className="w-5 hidden dark:block" />
-
-                    <a href="mailto:hasindulakshan.me@gmail.com">Send Email</a>
+        // I render the footer section of the website.
+        <footer className="w-full py-12 px-6 bg-white dark:bg-[#0F172A] border-t border-gray-100 dark:border-white/10">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                {/* I display the author name. */}
+                <div className="flex items-center gap-2">
+                    <span className="text-xl font-bold tracking-tight text-brand-dark dark:text-white">Hasindu Nagolla</span>
                 </div>
-            </div>
-            <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-3">
-                <p>© {new Date().getFullYear()} <a href="https://github.com/hasindu-nagolla">Hasindu Nagolla</a>. All rights reserved.</p>
-                <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
-                    <li><a target='_blank' href="https://github.com/hasindu-nagolla">GitHub</a></li>
-                    <li><a target='_blank' href="https://www.linkedin.com/in/hasindu-nagolla/">LinkedIn</a></li>
+
+                {/* I display the copyright notice. */}
+                <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">
+                    © {new Date().getFullYear()} Hasindu Nagolla. All rights reserved.
+                </p>
+
+                {/* I provide links to social profiles. */}
+                <ul className="flex items-center gap-8">
+                    <li>
+                        <a href="https://github.com/hasindu-nagolla" target="_blank" rel="noreferrer" className="text-sm font-semibold text-gray-500 hover:text-brand-dark dark:hover:text-white uppercase tracking-widest transition-colors">
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/hasindu-nagolla/" target="_blank" rel="noreferrer" className="text-sm font-semibold text-gray-500 hover:text-brand-dark dark:hover:text-white uppercase tracking-widest transition-colors">
+                            LinkedIn
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </div>
-    )
+        </footer>
+    );
 }
