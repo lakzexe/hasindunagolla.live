@@ -112,12 +112,19 @@ import Layout from "../layouts/Layout.astro";
             class="flex lg:items-start gap-4 flex-col lg:flex-row items-center text-center lg:text-left"
           >
             <img
+              id="roundedImage"
               src="/hasindu-nagolla.png"
               alt="Professional portrait of Hasindu Nagolla"
               width="90"
               height="90"
               decoding="async"
             />
+
+            <style>
+              #roundedImage {
+                border-radius: 50%;
+              }
+            </style>
 
             <div>
               <a
