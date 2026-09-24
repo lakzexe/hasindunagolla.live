@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Copyright and social links */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-500 font-medium">
-            © {new Date().getFullYear()} Hasindu Nagolla. All rights reserved.
+            © {new Date().getFullYear()} Hasindu (Lakshan) Nagolla. All rights reserved.
           </p>
           <div className="flex gap-4">
             <a

@@ -50,7 +50,7 @@ export default function About() {
                   <h4 className="text-sm font-semibold text-brand-dark mb-0.5">
                     Location
                   </h4>
-                  <p className="text-sm text-gray-500">Sri Lanka</p>
+                  <p className="text-sm text-gray-500">Matale, Sri Lanka</p>
                 </div>
               </div>
 
