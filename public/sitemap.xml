@@ -5,15 +5,33 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>https://hasindu-nagolla.me/</loc>
-    <lastmod>2024-12-30T16:25:24+00:00</lastmod>
+    <loc>https://hasindunagolla.live/</loc>
+    <lastmod>2025-12-08T01:00:00+05:30</lastmod>
     <priority>1.00</priority>
   </url>
+
   <url>
-    <loc>https://hasindu-nagolla.me/hasindu%20nagolla.pdf</loc>
-    <lastmod>2024-12-30T16:25:24+00:00</lastmod>
+    <loc>https://hasindunagolla.live/hasindu%20nagolla.pdf</loc>
+    <lastmod>2025-12-08T01:00:00+05:30</lastmod>
     <priority>0.80</priority>
   </url>
 
+  <url>
+    <loc>https://hasindunagolla.live/projects</loc>
+    <lastmod>2025-12-08T01:00:00+05:30</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://hasindunagolla.live/contact</loc>
+    <lastmod>2025-12-08T01:00:00+05:30</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://hasindunagolla.live/blog</loc>
+    <lastmod>2025-12-08T01:00:00+05:30</lastmod>
+    <priority>0.60</priority>
+  </url>
 
 </urlset>
