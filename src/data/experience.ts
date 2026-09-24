@@ -4,7 +4,7 @@ export const EXPERIENCE: ExperienceProp[] = [
   {
     dates: "August 2024 — Present",
     title: "Developer & Founder",
-    company: "MindConnex",
+    company: "MindBou",
     companyUrl: "",
     description:
       "An article-sharing platform currently under development that is designed to connect readers and writers through engaging content on various topics.",
@@ -17,7 +17,7 @@ export const EXPERIENCE: ExperienceProp[] = [
       "Github",
       "Tailwind CSS",
     ],
-    logo: "/logos/MindConnex.png",
+    logo: "/logos/MindBou.png",
   },
   {
     dates: "April 2024 — Present",
