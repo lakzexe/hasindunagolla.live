@@ -6,6 +6,7 @@
   html {
     scroll-behavior: smooth;
   }
+
   body {
     @apply bg-white text-brand-dark font-inter selection:bg-brand-primary/20 selection:text-brand-primary antialiased;
   }
@@ -18,7 +19,7 @@
     transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
     will-change: opacity, transform;
   }
-  
+
   .animate-on-scroll.is-visible {
     opacity: 1;
     transform: translateY(0);

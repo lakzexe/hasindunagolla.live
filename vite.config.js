@@ -11,7 +11,7 @@ export default defineConfig({
       name: 'copy-index-to-404',
       writeBundle() {
         fs.copyFileSync(
-          path.resolve(__dirname, 'dist', 'index.html'), 
+          path.resolve(__dirname, 'dist', 'index.html'),
           path.resolve(__dirname, 'dist', '404.html')
         )
       }

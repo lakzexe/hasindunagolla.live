@@ -28,11 +28,11 @@ export default {
                 darkHover: '#2a004a',
                 darkTheme: '#11001F',
                 brand: {
-                  primary: '#3B82F6', // Vibrant Blue
-                  secondary: '#EC4899', // Striking Pink
-                  dark: '#0F172A', // Slate-900 (Deep Charcoal)
-                  surface: '#F9FAFB', // Gray-50
-                  'surface-light': '#FFFFFF',
+                    primary: '#3B82F6', // Vibrant Blue
+                    secondary: '#EC4899', // Striking Pink
+                    dark: '#0F172A', // Slate-900 (Deep Charcoal)
+                    surface: '#F9FAFB', // Gray-50
+                    'surface-light': '#FFFFFF',
                 },
             },
             boxShadow: {
