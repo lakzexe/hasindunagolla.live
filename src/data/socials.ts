@@ -2,6 +2,7 @@ import IconGithub from "../components/icons/github.astro";
 import IconLinkedin from "../components/icons/linkedin.astro";
 import IconTwitter from "../components/icons/twitter.astro";
 
+
 export const SOCIALS = [
   {
     name: "Github",
@@ -18,4 +19,5 @@ export const SOCIALS = [
     url: "https://x.com/HasinduMe",
     icon: IconTwitter,
   },
+  
 ];
